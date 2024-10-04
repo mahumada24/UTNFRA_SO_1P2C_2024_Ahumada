@@ -47,4 +47,15 @@ n
 +900M
 
 w
+#####DISCO PARTICIONADO#
 EOF
+
+for i in {1..11}
+do
+sudo mkfs.ext4 /dev/sdc$i <<EOF
+y
+EOF
+done
+
+
+
