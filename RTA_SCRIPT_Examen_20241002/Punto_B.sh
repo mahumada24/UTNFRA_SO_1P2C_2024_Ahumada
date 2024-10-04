@@ -57,5 +57,25 @@ y
 EOF
 done
 
+set -x
 
+particion=1
+
+for i in {1..3}
+do
+
+	for j in {1..3}
+	do
+
+		if [[ $particion == 4 ]]; then
+			((particion++))
+		fi
+	echo "/dev/sdc${particion} Examenes-UTN/alumno_${i}/parcial_${j} ext4 defaults 0   0 " | sudo tee -a /etc/fstab
+
+	((particion++)) 
+
+        done
+done
+
+echo "/dev/sdc${particion} Examenes-UTN/profesores ext4 defaults 0   0 " | sudo tee -a /etc/fstab
 
