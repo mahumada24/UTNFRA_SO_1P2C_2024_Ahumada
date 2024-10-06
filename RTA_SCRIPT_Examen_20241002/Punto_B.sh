@@ -1,6 +1,5 @@
 #!/bin/bash
 
-#!/bin/bash
 
 DISCO="/dev/sdc"
 
