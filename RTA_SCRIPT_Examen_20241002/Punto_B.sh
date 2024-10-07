@@ -88,3 +88,4 @@ sudo mount -a #MONTAMOS LO QUE SE ENCUENTRA EN LA CARPETA /etc/fstab
 <<EOF
 ################################MONTAMOS LAS PARTICIONES#########################################################
 EOF
+
