@@ -34,7 +34,7 @@ sudo chmod 700 /Examenes-UTN/alumno_3
 sudo chmod 773 /Examenes-UTN/profesores
 
 #Sin acceder al usuario de cada uno, realizamos la creacion y escritura de un usuario "validar.txt"
-#donde iria con el comando "whoami", el nombre de usuario de cada dueño de la carpeta alumno_x
+donde iria con el comando "whoami", el nombre de usuario de cada dueño de la carpeta alumno_x
 sudo su -c "whoami" p1c2_2024_A1 | sudo tee /Examenes-UTN/alumno_1/validar1.txt
 sudo su -c "whoami" p1c2_2024_A2 | sudo tee /Examenes-UTN/alumno_2/validar2.txt
 sudo su -c "whoami" p1c2_2024_A3 | sudo tee /Examenes-UTN/alumno_3/validar3.txt
